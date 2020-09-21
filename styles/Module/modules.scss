@@ -24,10 +24,17 @@
     }
 }
 // Card module
-.card-container {
-    .card {
-        height: 50%;
-        width: 50%;
-        
+    .card-container {
+        height: 55%;
+        width: 80%;
+        .design-1 {
+            height: 20%;
+        }
+        .design-2 {
+            height: 25%;
+        }
+        .me {
+            height: 85%;
+            width: 110%;
+        }
     }
-}   

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
 $colorTheme:(
     base: rgba(122, 72, 243, 1),
     accent: rgba(73, 6, 239, 1),
@@ -32,11 +35,20 @@ $fontTheme: (
     }
 }
 .card-container {
-    .card {
         background-color: getColor(default);
         filter: drop-shadow(2px 4px 0.40rem rgba(0,0,0,0.5));
             .me {
                 filter: grayscale(100%);
             }
+            .design-1 {
+                filter: drop-shadow(2px 4px 0.40rem rgba(0,0,0,0.5));
+            }
+            .design-2 {
+                filter: drop-shadow(2px 4px 0.40rem rgba(0,0,0,0.5));
+            }
+}
+.content-info {
+    h1 {
+        font-family: getFont(main);
     }
 }

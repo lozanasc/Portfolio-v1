@@ -16,6 +16,24 @@
       -ms-flex-direction: column;
           flex-direction: column;
   z-index: 1;
-  background-color: white;
+  padding: 0;
+  margin: 10% auto;
+}
+
+.card-container .design-1 {
+  position: absolute;
+  margin: 120px 40px;
+  z-index: 1;
+}
+
+.card-container .design-2 {
+  position: absolute;
+  margin: 110px 60px;
+}
+
+.card-container .me {
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
 }
 /*# sourceMappingURL=layout.css.map */
