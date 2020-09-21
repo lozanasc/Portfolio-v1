@@ -95,3 +95,18 @@ $fontTheme: (
 .about-page {
     background-color: getColor(base);
 }
+
+// PROJECTS
+.projects-page {
+    background-color: getColor(accent);
+}
+
+// CONTACTS
+.contacts-page {
+    background-color: getColor(base);
+}
+
+// FOOTER
+footer {
+    background-color: getColor(accent);
+}

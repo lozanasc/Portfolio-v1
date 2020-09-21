@@ -37,6 +37,12 @@
   z-index: 1;
 }
 
+@media (min-width: 1200px) {
+  .card-container {
+    background-color: aquamarine;
+  }
+}
+
 .buttons-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,6 +59,20 @@
 }
 
 .about-page {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.projects-page {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-page {
   height: 100%;
   width: 100%;
   margin: 0;

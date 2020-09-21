@@ -1,3 +1,5 @@
+@use '../Layout/layout.scss';
+
 // Hamburger module
 .hamburger-container {
     cursor: pointer;
@@ -36,6 +38,9 @@
         .design-2 {
             height: 25%;
         }
+        // @include desktop-up() {
+
+        // }
     }
 // Call-to-action buttons module
     .buttons-container {

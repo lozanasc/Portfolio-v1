@@ -12,6 +12,33 @@ $viewports: (
     @return map-get($map: $viewports, $key: $view);
 }
 
+// Mixins
+@mixin phone {
+    @media (max-width: getViewport(phone)){
+        @content;
+    }
+}
+@mixin tablet-portrait {
+    @media (min-width: getViewport(tablet_portrait)){
+        @content;
+    }
+}
+@mixin tablet-landscape {
+    @media (min-width: getViewport(tablet_landscape)){
+        @content;
+    }
+}
+@mixin desktop-up {
+    @media (min-width: getViewport(desktop_up)){
+        @content;
+    }
+}
+@mixin big-desktop-up {
+    @media (min-width: getViewport(big_desktop_up)){
+        @content;
+    }
+}
+
 // HOMEPAGE
 
 // Homepage background
@@ -50,6 +77,9 @@ $viewports: (
         margin: 105px 50px;
         z-index: 1;
     }
+    @include desktop-up() {
+        background-color: aquamarine;
+    }
 }
 
 // Call-to-Action buttons
@@ -72,30 +102,18 @@ $viewports: (
     padding: 0;
 }
 
+// PROJECTS PAGE
+.projects-page {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-// Mixins
-@mixin phone {
-    @media (max-width: getViewport(phone)){
-        @content;
-    }
-}
-@mixin tablet-portrait {
-    @media (min-width: getViewport(tablet_portrait)){
-        @content;
-    }
-}
-@mixin tablet-landscape {
-    @media (min-width: getViewport(tablet_landscape)){
-        @content;
-    }
-}
-@mixin desktop-up {
-    @media (min-width: getViewport(desktop_up)){
-        @content;
-    }
-}
-@mixin big-desktop-up {
-    @media (min-width: getViewport(big_desktop_up)){
-        @content;
-    }
+// CONTACT PAGE
+.contacts-page {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
