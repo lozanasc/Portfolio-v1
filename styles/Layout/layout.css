@@ -1,0 +1,21 @@
+.homepage-bg {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+          clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 1;
+  background-color: white;
+}
+/*# sourceMappingURL=layout.css.map */

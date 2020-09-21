@@ -1,0 +1,14 @@
+.homepage-bg {
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.card-container {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background-color: white;
+}
+

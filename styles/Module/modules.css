@@ -1,0 +1,33 @@
+.hamburger-container {
+  height: 15px;
+  width: 105px;
+  margin: 5% auto;
+  cursor: pointer;
+}
+
+.hamburger-container .rect1 {
+  height: 5px;
+  width: 35px;
+  margin: 5px auto;
+  border-radius: 5px;
+}
+
+.hamburger-container .rect2 {
+  height: 5px;
+  width: 35px;
+  margin: 5px auto;
+  border-radius: 5px;
+}
+
+.hamburger-container .rect3 {
+  height: 5px;
+  width: 35px;
+  margin: 5px auto;
+  border-radius: 5px;
+}
+
+.card-container .card {
+  height: 50%;
+  width: 50%;
+}
+/*# sourceMappingURL=modules.css.map */

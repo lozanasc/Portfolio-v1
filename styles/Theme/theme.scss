@@ -1,0 +1,42 @@
+$colorTheme:(
+    base: rgba(122, 72, 243, 1),
+    accent: rgba(73, 6, 239, 1),
+    default: rgb(255,255,255)
+);
+
+$fontTheme: (
+    base: 'Montserrat',
+    secondary: 'Hind'
+);
+
+@function getFont($font){
+    @return map-get($map: $fontTheme, $key: $font);
+}
+
+@function getColor($color){
+    @return map-get($colorTheme,$color);
+}
+
+.homepage-bg{
+    background-color: getColor(base);
+}
+.hamburger-container {
+    .rect1 {
+        background-color: getColor(default);
+    }
+    .rect2 {
+        background-color: getColor(default);
+    }
+    .rect3 {
+        background-color: getColor(default);
+    }
+}
+.card-container {
+    .card {
+        background-color: getColor(default);
+        filter: drop-shadow(2px 4px 0.40rem rgba(0,0,0,0.5));
+            .me {
+                filter: grayscale(100%);
+            }
+    }
+}

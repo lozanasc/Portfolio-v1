@@ -1,0 +1,33 @@
+// Hamburger module
+.hamburger-container {
+    height: 15px;
+    width: 105px;
+    margin: 5% auto;
+    cursor: pointer;
+    .rect1 {
+        height: 5px;
+        width: 35px;
+        margin: 5px auto;
+        border-radius: 5px;
+    }
+    .rect2 {
+        height: 5px;
+        width: 35px;
+        margin: 5px auto;
+        border-radius: 5px;
+    }
+    .rect3{
+        height: 5px;
+        width: 35px;
+        margin: 5px auto;
+        border-radius: 5px;
+    }
+}
+// Card module
+.card-container {
+    .card {
+        height: 50%;
+        width: 50%;
+        
+    }
+}   

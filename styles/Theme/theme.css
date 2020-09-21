@@ -1,0 +1,27 @@
+.homepage-bg {
+  background-color: #7a48f3;
+}
+
+.hamburger-container .rect1 {
+  background-color: white;
+}
+
+.hamburger-container .rect2 {
+  background-color: white;
+}
+
+.hamburger-container .rect3 {
+  background-color: white;
+}
+
+.card-container .card {
+  background-color: white;
+  -webkit-filter: drop-shadow(2px 4px 0.4rem rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(2px 4px 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.card-container .card .me {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+/*# sourceMappingURL=theme.css.map */
