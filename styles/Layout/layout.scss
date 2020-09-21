@@ -1,3 +1,20 @@
+// Mobile first approach yessuh
+// Viewports
+$viewports: (
+    phone: 599px,
+    tablet_portrait: 600px,
+    tablet_landscape: 900px,
+    desktop_up: 1200px,
+    big_desktop_up: 1800px 
+);
+
+@function getViewport($view){
+    @return map-get($map: $viewports, $key: $view);
+}
+
+// HOMEPAGE
+
+// Homepage background
 .homepage-bg {
     clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
     height: 100%;
@@ -5,25 +22,88 @@
     position: absolute;
     z-index: -1;
 }
+
+// Hamburger
+.hamburger-container {
+    height: 15px;
+    width: 105px;
+    margin: 5% auto;
+}
+
+// Me card
 .card-container {
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
     padding: 0;
     margin: 10% auto;
+    .img-container {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 3;
+    }
     .design-1 {
         position: absolute;
-        margin: 120px 40px;
-        z-index: 1;
+        margin: 80px 20px;
+        z-index: 2;
     }
     .design-2 {
         position: absolute;
-        margin: 110px 60px;
-    }
-    .me {
-        position: absolute;
-            bottom: 0;
-            z-index: 3;
+        margin: 105px 50px;
+        z-index: 1;
     }
 }
 
+// Call-to-Action buttons
+.buttons-container {
+    display: flex;
+    padding: 45px 25px;
+    .projects {
+        margin: auto;
+    }
+    .collab {
+        margin: auto;
+    }
+}
+// Next-page button
+.next-page {
+    border: none;
+    display: flex;
+    margin: 20px auto;
+    button {
+        align-self: flex-end;
+        clip-path: polygon(50% 100%, 0 0, 100% 0);
+    }
+}
+
+// ABOUT PAGE
+.about-page {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+// Mixins
+@mixin phone {
+    @media (max-width: getViewport(phone)){
+        @content;
+    }
+}
+@mixin tablet-portrait {
+    @media (min-width: getViewport(tablet_portrait)){
+        @content;
+    }
+}
+@mixin tablet-landscape {
+    @media (min-width: getViewport(tablet_landscape)){
+        @content;
+    }
+}
+@mixin desktop-up {
+    @media (min-width: getViewport(desktop_up)){
+        @content;
+    }
+}
+@mixin big-desktop-up {
+    @media (min-width: getViewport(big_desktop_up)){
+        @content;
+    }
+}

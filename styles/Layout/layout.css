@@ -7,33 +7,70 @@
   z-index: -1;
 }
 
+.hamburger-container {
+  height: 15px;
+  width: 105px;
+  margin: 5% auto;
+}
+
 .card-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  z-index: 1;
   padding: 0;
   margin: 10% auto;
 }
 
+.card-container .img-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+}
+
 .card-container .design-1 {
   position: absolute;
-  margin: 120px 40px;
-  z-index: 1;
+  margin: 80px 20px;
+  z-index: 2;
 }
 
 .card-container .design-2 {
   position: absolute;
-  margin: 110px 60px;
+  margin: 105px 50px;
+  z-index: 1;
 }
 
-.card-container .me {
-  position: absolute;
-  bottom: 0;
-  z-index: 3;
+.buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 45px 25px;
+}
+
+.buttons-container .projects {
+  margin: auto;
+}
+
+.buttons-container .collab {
+  margin: auto;
+}
+
+.next-page {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px auto;
+}
+
+.next-page button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+          clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.about-page {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=layout.css.map */

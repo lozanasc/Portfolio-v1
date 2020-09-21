@@ -36,4 +36,63 @@
   -webkit-filter: drop-shadow(2px 4px 0.4rem rgba(0, 0, 0, 0.5));
           filter: drop-shadow(2px 4px 0.4rem rgba(0, 0, 0, 0.5));
 }
+
+.content-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content-info .main-name {
+  font-family: "Montserrat";
+  margin: -20px 30px;
+  font-size: 1.5em;
+}
+
+.content-info .last-name {
+  font-family: "Montserrat";
+  color: #4906ef;
+  margin: 15px 30px;
+  font-size: 1.5em;
+}
+
+.content-info .role-desc {
+  font-family: "Hind";
+  margin: -20px 30px;
+  font-size: 1.3em;
+}
+
+.buttons-container .projects {
+  background-color: white;
+  border-color: black;
+  -webkit-filter: drop-shadow(0 4px 0.4rem rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 4px 0.4rem rgba(0, 0, 0, 0.5));
+  font-size: 1.1em;
+}
+
+.buttons-container .collab {
+  background-color: #4906ef;
+  color: white;
+  -webkit-filter: drop-shadow(0 4px 0.4rem rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 4px 0.4rem rgba(0, 0, 0, 0.5));
+  font-family: "Montserrat";
+  font-size: 1.2em;
+}
+
+.next-page {
+  -webkit-filter: drop-shadow(0 4px 0.6rem rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 4px 0.6rem rgba(0, 0, 0, 0.5));
+}
+
+.next-page button {
+  background-color: #4906ef;
+}
+
+.about-page {
+  background-color: #7a48f3;
+}
 /*# sourceMappingURL=theme.css.map */

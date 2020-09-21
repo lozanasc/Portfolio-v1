@@ -1,8 +1,5 @@
 // Hamburger module
 .hamburger-container {
-    height: 15px;
-    width: 105px;
-    margin: 5% auto;
     cursor: pointer;
     .rect1 {
         height: 5px;
@@ -27,14 +24,43 @@
     .card-container {
         height: 55%;
         width: 80%;
+        .img-container {
+            background-image: url(/assets/me/me-in-suit.png);
+            background-size: cover;
+            background-position: center;
+            filter: grayscale(100);
+        }
         .design-1 {
             height: 20%;
         }
         .design-2 {
             height: 25%;
         }
-        .me {
-            height: 85%;
-            width: 110%;
+    }
+// Call-to-action buttons module
+    .buttons-container {
+        .projects {
+            height: 40px;
+            width: 120px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .collab {
+            height: 40px;
+            width: 120px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
         }
     }
+// Next page button module
+.next-page {
+    height: 40px;
+    width: 40px;
+    button {
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        border: none;
+    }
+}

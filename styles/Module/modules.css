@@ -1,7 +1,4 @@
 .hamburger-container {
-  height: 15px;
-  width: 105px;
-  margin: 5% auto;
   cursor: pointer;
 }
 
@@ -31,6 +28,14 @@
   width: 80%;
 }
 
+.card-container .img-container {
+  background-image: url(/assets/me/me-in-suit.png);
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: grayscale(100);
+          filter: grayscale(100);
+}
+
 .card-container .design-1 {
   height: 20%;
 }
@@ -39,8 +44,30 @@
   height: 25%;
 }
 
-.card-container .me {
-  height: 85%;
-  width: 110%;
+.buttons-container .projects {
+  height: 40px;
+  width: 120px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.buttons-container .collab {
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.next-page {
+  height: 40px;
+  width: 40px;
+}
+
+.next-page button {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  border: none;
 }
 /*# sourceMappingURL=modules.css.map */
