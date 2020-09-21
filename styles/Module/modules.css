@@ -58,16 +58,4 @@
   border-radius: 20px;
   cursor: pointer;
 }
-
-.next-page {
-  height: 40px;
-  width: 40px;
-}
-
-.next-page button {
-  cursor: pointer;
-  height: 100%;
-  width: 100%;
-  border: none;
-}
 /*# sourceMappingURL=modules.css.map */

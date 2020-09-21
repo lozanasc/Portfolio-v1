@@ -52,21 +52,6 @@
   margin: auto;
 }
 
-.next-page {
-  border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 20px auto;
-}
-
-.next-page button {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
-          clip-path: polygon(50% 100%, 0 0, 100% 0);
-}
-
 .about-page {
   height: 100%;
   width: 100%;

@@ -83,15 +83,6 @@
   font-size: 1.2em;
 }
 
-.next-page {
-  -webkit-filter: drop-shadow(0 4px 0.6rem rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(0 4px 0.6rem rgba(0, 0, 0, 0.5));
-}
-
-.next-page button {
-  background-color: #4906ef;
-}
-
 .about-page {
   background-color: #7a48f3;
 }
