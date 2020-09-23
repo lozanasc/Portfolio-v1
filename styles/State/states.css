@@ -1,1 +1,29 @@
-/* No CSS *//*# sourceMappingURL=states.css.map */
+.top-nav {
+  /* Rotate first bar */
+  /* Fade out the second bar */
+  /* Rotate last bar */
+}
+
+.top-nav .hamburger-mobile__enabled {
+  display: none;
+}
+
+.top-nav .rect1, .top-nav .rect2, .top-nav .rect3 {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.top-nav .active .rect1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.top-nav .active .rect2 {
+  opacity: 0;
+}
+
+.top-nav .active .rect3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+/*# sourceMappingURL=states.css.map */
