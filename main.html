@@ -21,35 +21,39 @@
                 <div class="rect2"></div>
                 <div class="rect3"></div>
             </div>
-            <div class="hamburger-mobile--enabled" style="display: none;">
+            <div class="hamburger-mobile__enabled">
+                <ul class="nav-list-mobile">
+                    <li><a href="#contacts"><strong>CONTACTS</strong></a></li>
+                    <li><a href="#about"><strong>ABOUT</strong></a></li>
+                    <li><a href="#projects"><strong>PROJECTS</strong></a></li>
+                </ul>
+            </div>
+             <div class="tablet-up-nav" style="display: none;">
                 <ul>
                     <li><a href=""><strong>CONTACTS</strong></a></li>
                     <li><a href=""><strong>ABOUT</strong></a></li>
                     <li><a href=""><strong>PROJECTS</strong></a></li>
                 </ul>
             </div>
-            <!-- <div class="tablet-up-nav">
-                <ul>
-                    <li><a href=""><strong>CONTACTS</strong></a></li>
-                    <li><a href=""><strong>ABOUT</strong></a></li>
-                    <li><a href=""><strong>PROJECTS</strong></a></li>
-                </ul>
-            </div> -->
         </header>
         <!-- base card-desc is a column -->
         <div class="card-desc-container">
-            <div class="image-container">
-            </div>
-            <!-- columna as well -->
-            <div class="desc-container">
-                <h1 class="fname"><strong></strong></h1>
-                <h1 class="lname"><strong></strong></h1>
-                <h2 class="desc"><strong></strong></h2>
-            </div>
+            <div class="image-container"></div>
+        </div>
+        <!-- columna as well -->
+        <div class="desc-container">
+            <h1 class="fname"><strong>Sean Christian</strong></h1>
+            <h1 class="lname"><strong>LOZANA</strong></h1>
+            <h2 class="desc"><strong>Developer & Designer</strong></h2>
         </div>
         <!-- should be a row -->
         <div class="button-container">
-
+            <button class="projects-btn">
+                <strong>PROJECTS</strong>
+            </button>
+            <button class="collab-btn">
+                <strong>COLLAB</strong>
+            </button>
         </div>
         <!-- part of the base which is the column -->
         <button class="next-page">
@@ -57,7 +61,7 @@
     </div>
 
     <!-- ABOUT -->
-    <div class="about-page">
+    <div class="about-page" id="about">
         <!-- column -->
         <div class="card-about-container">
             <h1><strong>Hey there!</strong></h1>
@@ -81,7 +85,7 @@
 
     <!-- Projects -->
     <!-- Should be a column -->
-    <div class="projects-page">
+    <div class="projects-page" id="projects">
         <h1 class="header-greet">
             <strong> What I’ve been working on 💪 </strong>
         </h1>
@@ -93,14 +97,14 @@
     </div>
 
     <!-- Contacts -->
-    <div class="contacts-page">
+    <div class="contacts-page" id="contacts">
         <div class="contacts-card">
             <div class="input-container">
                 <h1><strong>Get in touch</strong></h1>
-                <span>Name: </span><input type="text" name="name">
-                <span>Email: </span><input type="text" name="email">
-                <span>Company: </span><input type="text" name="company">
-                <span>Message: </span><input type="text" name="message">
+                <span>Name: </span><input type="text" name="name"><br>
+                <span>Email: </span><input type="text" name="email"><br>
+                <span>Company: </span><input type="text" name="company"><br>
+                <span>Message: </span><input type="text" name="message"><br>
             </div>
             <button class="submit"></button>
         </div>
