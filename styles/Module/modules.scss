@@ -1,2 +1,52 @@
 @use '../viewport';
 
+// Homepage
+.homepage-container {
+    height: 100%;
+    width: 100%;
+    // Navigation module configuration
+    .top-nav{
+        .hamburger-mobile-nav {
+            cursor: pointer;
+            .rect1{
+                height: 5px;
+                width: 45px;
+                border-radius: 10px;
+            }
+            .rect2{
+                height: 5px;
+                width: 45px;
+                border-radius: 10px;
+            }
+            .rect3{
+                height: 5px;
+                width: 45px;
+                border-radius: 10px;
+            }
+        }
+    }
+    .card-desc-container {
+        height: 50%;
+        width: 75%;
+        .image-container {
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+    .button-container {
+        .projects-btn{
+            width: 120px;
+            height: 30px;
+            border-radius: 20px;
+        }
+        .collab-btn {
+            width: 120px;
+            height: 30px;
+            border: none;
+            border-radius: 20px;
+        }
+    }
+}
