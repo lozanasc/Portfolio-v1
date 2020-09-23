@@ -1,67 +1,9 @@
 // Mobile first approach yessuh
 @import "../viewport";
 // HOMEPAGE
-// Homepage background
 .homepage-container {
     display: flex;
     flex-direction: column;
-        // Hamburger
-    .hamburger-container {
-        margin: 5% auto;
-        padding: 0;
-    }
-        // Navbar for tablet-up sizes
-    .wide-nav {
-        display: none;
-    }
-    .card-content-container {
-        // Me card
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        .card-container {
-            margin: 2% auto;
-            .img-container {
-                position: absolute;
-                z-index: 3;
-            }
-            .design-1 {
-                position: relative;
-                margin: 20% 5%;
-                z-index: 2;
-            }
-            .design-2 {
-                position: absolute;
-                margin: 30% -20%;
-                z-index: 1;
-            }
-        }
-        .content-info {
-            display: flex;
-            flex-direction: column;
-            margin: 5% 0;
-            .main-name {
-                margin: -20px 20px;
-            }
-            .last-name {
-                margin: 15px 20px;
-            }
-            .role-desc {
-                margin: -20px 20px;
-            }
-        }
-    }
-    // Call-to-Action buttons
-    .buttons-container {
-        display: flex;
-        padding: 45px 25px;
-        .projects {
-            margin: auto;
-        }
-        .collab {
-            margin: auto;
-        }
-    }
 }
 
 
