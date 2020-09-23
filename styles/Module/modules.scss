@@ -1,60 +1,69 @@
-@use '../Layout/layout.scss';
+@use '../viewport';
 
-// Hamburger module
-.hamburger-container {
-    cursor: pointer;
-    .rect1 {
-        height: 5px;
-        width: 35px;
-        margin: 5px auto;
-        border-radius: 5px;
+.homepage-container {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    // Hamburger module
+    .hamburger-container {
+        cursor: pointer;
+        .rect1 {
+            height: 5px;
+            width: 35px;
+            margin: 5px auto;
+            border-radius: 5px;
+        }
+        .rect2 {
+            height: 5px;
+            width: 35px;
+            margin: 5px auto;
+            border-radius: 5px;
+        }
+        .rect3{
+            height: 5px;
+            width: 35px;
+            margin: 5px auto;
+            border-radius: 5px;
+        }
     }
-    .rect2 {
-        height: 5px;
-        width: 35px;
-        margin: 5px auto;
-        border-radius: 5px;
+    // Card module
+    .card-content-container {
+        height: 80%;
+        width: 100%;
+        .card-container {
+            height: 100%;
+            width: 90%;
+            .img-container {
+                height: 100%;
+                width: 100%;
+                background-image: url(/assets/me/me-in-suit.png);
+                background-size: cover;
+                background-position: center;
+            }
+            .design-1 {
+                height: 20%;
+            }
+            .design-2 {
+                height: 25%;
+            }
+        }
     }
-    .rect3{
-        height: 5px;
-        width: 35px;
-        margin: 5px auto;
-        border-radius: 5px;
-    }
+    // Call-to-action buttons module
+        .buttons-container {
+            .projects {
+                height: 40px;
+                width: 120px;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+            .collab {
+                height: 40px;
+                width: 120px;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+        }
 }
-// Card module
-    .card-container {
-        height: 55%;
-        width: 80%;
-        .img-container {
-            background-image: url(/assets/me/me-in-suit.png);
-            background-size: cover;
-            background-position: center;
-            filter: grayscale(100);
-        }
-        .design-1 {
-            height: 20%;
-        }
-        .design-2 {
-            height: 25%;
-        }
-        // @include desktop-up() {
 
-        // }
-    }
-// Call-to-action buttons module
-    .buttons-container {
-        .projects {
-            height: 40px;
-            width: 120px;
-            border-radius: 20px;
-            cursor: pointer;
-        }
-        .collab {
-            height: 40px;
-            width: 120px;
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-        }
-    }

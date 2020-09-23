@@ -1,98 +1,69 @@
 // Mobile first approach yessuh
-// Viewports
-$viewports: (
-    phone: 599px,
-    tablet_portrait: 600px,
-    tablet_landscape: 900px,
-    desktop_up: 1200px,
-    big_desktop_up: 1800px 
-);
-
-@function getViewport($view){
-    @return map-get($map: $viewports, $key: $view);
-}
-
-// Mixins
-@mixin phone {
-    @media (max-width: getViewport(phone)){
-        @content;
-    }
-}
-@mixin tablet-portrait {
-    @media (min-width: getViewport(tablet_portrait)){
-        @content;
-    }
-}
-@mixin tablet-landscape {
-    @media (min-width: getViewport(tablet_landscape)){
-        @content;
-    }
-}
-@mixin desktop-up {
-    @media (min-width: getViewport(desktop_up)){
-        @content;
-    }
-}
-@mixin big-desktop-up {
-    @media (min-width: getViewport(big_desktop_up)){
-        @content;
-    }
-}
-
+@import "../viewport";
 // HOMEPAGE
-
 // Homepage background
-.homepage-bg {
-    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-}
-
-// Hamburger
-.hamburger-container {
-    height: 15px;
-    width: 105px;
-    margin: 5% auto;
-}
-
-// Me card
-.card-container {
-    padding: 0;
-    margin: 10% auto;
-    .img-container {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index: 3;
-    }
-    .design-1 {
-        position: absolute;
-        margin: 80px 20px;
-        z-index: 2;
-    }
-    .design-2 {
-        position: absolute;
-        margin: 105px 50px;
-        z-index: 1;
-    }
-    @include desktop-up() {
-        background-color: aquamarine;
-    }
-}
-
-// Call-to-Action buttons
-.buttons-container {
+.homepage-container {
     display: flex;
-    padding: 45px 25px;
-    .projects {
-        margin: auto;
+    flex-direction: column;
+        // Hamburger
+    .hamburger-container {
+        margin: 5% auto;
+        padding: 0;
     }
-    .collab {
+        // Navbar for tablet-up sizes
+    .wide-nav {
+        display: none;
+    }
+    .card-content-container {
+        // Me card
+        display: flex;
+        flex-direction: column;
         margin: auto;
+        .card-container {
+            margin: 2% auto;
+            .img-container {
+                position: absolute;
+                z-index: 3;
+            }
+            .design-1 {
+                position: relative;
+                margin: 20% 5%;
+                z-index: 2;
+            }
+            .design-2 {
+                position: absolute;
+                margin: 30% -20%;
+                z-index: 1;
+            }
+        }
+        .content-info {
+            display: flex;
+            flex-direction: column;
+            margin: 5% 0;
+            .main-name {
+                margin: -20px 20px;
+            }
+            .last-name {
+                margin: 15px 20px;
+            }
+            .role-desc {
+                margin: -20px 20px;
+            }
+        }
+    }
+    // Call-to-Action buttons
+    .buttons-container {
+        display: flex;
+        padding: 45px 25px;
+        .projects {
+            margin: auto;
+        }
+        .collab {
+            margin: auto;
+        }
     }
 }
+
 
 // ABOUT PAGE
 .about-page {

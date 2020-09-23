@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
-.homepage-bg {
-  background-color: #7a48f3;
+@media (max-width: 599px) {
+  .homepage-container {
+    background-image: url("/assets/bg/mobile-portfolio-bg.png");
+  }
 }
 
 .hamburger-container .rect1 {
@@ -16,54 +18,41 @@
   background-color: white;
 }
 
-.card-container {
+.card-content-container .card-container {
   background-color: white;
   -webkit-filter: drop-shadow(2px 4px 0.4rem rgba(0, 0, 0, 0.5));
           filter: drop-shadow(2px 4px 0.4rem rgba(0, 0, 0, 0.5));
 }
 
-.card-container .me {
+.card-content-container .card-container .img-container {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
 
-.card-container .design-1 {
+.card-content-container .card-container .design-1 {
   -webkit-filter: drop-shadow(2px 4px 0.4rem rgba(0, 0, 0, 0.5));
           filter: drop-shadow(2px 4px 0.4rem rgba(0, 0, 0, 0.5));
 }
 
-.card-container .design-2 {
+.card-content-container .card-container .design-2 {
   -webkit-filter: drop-shadow(2px 4px 0.4rem rgba(0, 0, 0, 0.5));
           filter: drop-shadow(2px 4px 0.4rem rgba(0, 0, 0, 0.5));
 }
 
-.content-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.content-info .main-name {
+.card-content-container .content-info .main-name {
   font-family: "Montserrat";
-  margin: -20px 30px;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
-.content-info .last-name {
+.card-content-container .content-info .last-name {
   font-family: "Montserrat";
   color: #4906ef;
-  margin: 15px 30px;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
-.content-info .role-desc {
+.card-content-container .content-info .role-desc {
   font-family: "Hind";
-  margin: -20px 30px;
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 .buttons-container .projects {

@@ -1,60 +1,89 @@
-.homepage-bg {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
-          clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
+.homepage-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.hamburger-container {
-  height: 15px;
-  width: 105px;
+.homepage-container .hamburger-container {
   margin: 5% auto;
-}
-
-.card-container {
   padding: 0;
-  margin: 10% auto;
 }
 
-.card-container .img-container {
-  height: 100%;
-  width: 100%;
+.homepage-container .wide-nav {
+  display: none;
+}
+
+.homepage-container .card-content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+.homepage-container .card-content-container .card-container {
+  margin: 2% auto;
+}
+
+.homepage-container .card-content-container .card-container .img-container {
   position: absolute;
   z-index: 3;
 }
 
-.card-container .design-1 {
-  position: absolute;
-  margin: 80px 20px;
+.homepage-container .card-content-container .card-container .design-1 {
+  position: relative;
+  margin: 20% 5%;
   z-index: 2;
 }
 
-.card-container .design-2 {
+.homepage-container .card-content-container .card-container .design-2 {
   position: absolute;
-  margin: 105px 50px;
+  margin: 30% -20%;
   z-index: 1;
 }
 
-@media (min-width: 1200px) {
-  .card-container {
-    background-color: aquamarine;
-  }
+.homepage-container .card-content-container .content-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5% 0;
 }
 
-.buttons-container {
+.homepage-container .card-content-container .content-info .main-name {
+  margin: -20px 20px;
+}
+
+.homepage-container .card-content-container .content-info .last-name {
+  margin: 15px 20px;
+}
+
+.homepage-container .card-content-container .content-info .role-desc {
+  margin: -20px 20px;
+}
+
+.homepage-container .buttons-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 45px 25px;
 }
 
-.buttons-container .projects {
+.homepage-container .buttons-container .projects {
   margin: auto;
 }
 
-.buttons-container .collab {
+.homepage-container .buttons-container .collab {
   margin: auto;
 }
 

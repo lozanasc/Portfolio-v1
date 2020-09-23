@@ -1,58 +1,70 @@
-@use '../Layout/layout.scss';
-.hamburger-container {
+@use '../viewport';
+.homepage-container {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.homepage-container .hamburger-container {
   cursor: pointer;
 }
 
-.hamburger-container .rect1 {
+.homepage-container .hamburger-container .rect1 {
   height: 5px;
   width: 35px;
   margin: 5px auto;
   border-radius: 5px;
 }
 
-.hamburger-container .rect2 {
+.homepage-container .hamburger-container .rect2 {
   height: 5px;
   width: 35px;
   margin: 5px auto;
   border-radius: 5px;
 }
 
-.hamburger-container .rect3 {
+.homepage-container .hamburger-container .rect3 {
   height: 5px;
   width: 35px;
   margin: 5px auto;
   border-radius: 5px;
 }
 
-.card-container {
-  height: 55%;
-  width: 80%;
+.homepage-container .card-content-container {
+  height: 80%;
+  width: 100%;
 }
 
-.card-container .img-container {
+.homepage-container .card-content-container .card-container {
+  height: 100%;
+  width: 90%;
+}
+
+.homepage-container .card-content-container .card-container .img-container {
+  height: 100%;
+  width: 100%;
   background-image: url(/assets/me/me-in-suit.png);
   background-size: cover;
   background-position: center;
-  -webkit-filter: grayscale(100);
-          filter: grayscale(100);
 }
 
-.card-container .design-1 {
+.homepage-container .card-content-container .card-container .design-1 {
   height: 20%;
 }
 
-.card-container .design-2 {
+.homepage-container .card-content-container .card-container .design-2 {
   height: 25%;
 }
 
-.buttons-container .projects {
+.homepage-container .buttons-container .projects {
   height: 40px;
   width: 120px;
   border-radius: 20px;
   cursor: pointer;
 }
 
-.buttons-container .collab {
+.homepage-container .buttons-container .collab {
   height: 40px;
   width: 120px;
   border: none;

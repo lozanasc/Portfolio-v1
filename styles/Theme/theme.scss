@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
 
-// Theme arrays
+@import "../viewport";
+
+$homepageBackground:(
+    mobile: url('/assets/bg/mobile-portfolio-bg.png'),
+    tablet-up: url('/assets/bg/tablet-up-portfolio-bg.png')
+);
+
 $colorTheme:(
     base: rgba(122, 72, 243, 1),
     accent: rgba(73, 6, 239, 1),
@@ -20,9 +26,17 @@ $fontTheme: (
 @function getColor($color){
     @return map-get($colorTheme,$color);
 }
-// Homepage bg
-.homepage-bg{
-    background-color: getColor(base);
+@function getHomepageBackground($bg){
+    @return map-get($map: $homepageBackground, $key: $bg);
+}
+// Homepage bg as background img
+.homepage-container{
+    @include phone {
+        background-image: getHomepageBackground(mobile);
+    }
+    @include tablet-portrait {
+        background-image: getHomepageBackground(tablet_portrait)
+    }
 }
 // Navigation
 .hamburger-container {
@@ -36,11 +50,12 @@ $fontTheme: (
         background-color: getColor(default);
     }
 }
-// Card containing image and other stuff
-.card-container {
+.card-content-container {
+        // Card containing image and other stuff
+    .card-container {
         background-color: getColor(default);
         filter: drop-shadow(2px 4px 0.40rem rgba(0,0,0,0.5));
-            .me {
+            .img-container {
                 filter: grayscale(100%);
             }
             .design-1 {
@@ -49,26 +64,22 @@ $fontTheme: (
             .design-2 {
                 filter: drop-shadow(2px 4px 0.40rem rgba(0,0,0,0.5));
             }
-}
-// Homepage basic information
-.content-info {
-    display: flex;
-    flex-direction: column;
-    .main-name {
-        font-family: getFont(base);
-        margin: -20px 30px;
-        font-size: 1.5em;
     }
-    .last-name {
-        font-family: getFont(base);
-        color: getColor(accent);
-        margin: 15px 30px;
-        font-size: 1.5em;
-    }
-    .role-desc {
-        font-family: getFont(secondary);
-        margin: -20px 30px;
-        font-size: 1.3em;
+        // Homepage basic information
+    .content-info {
+        .main-name {
+            font-family: getFont(base);
+            font-size: 1.8em;
+        }
+        .last-name {
+            font-family: getFont(base);
+            color: getColor(accent);
+            font-size: 1.8em;
+        }
+        .role-desc {
+            font-family: getFont(secondary);
+            font-size: 1.5em;
+        }
     }
 }
 
@@ -91,7 +102,6 @@ $fontTheme: (
 }
 
 // ABOUT PAGE
-
 .about-page {
     background-color: getColor(base);
 }
