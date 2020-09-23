@@ -29,7 +29,80 @@ $fontTheme: (
 @function getHomepageBackground($bg){
     @return map-get($map: $homepageBackground, $key: $bg);
 }
-// ABOUT PAGE
+
+// HOMEPAGE
+.homepage-container {
+    @include phone {
+        background-image: getHomepageBackground(mobile);
+    }
+    @include tablet-portrait {
+        background-image: getHomepageBackground(tablet-up);
+    }
+    // Hamburger config
+    .top-nav {
+        .hamburger-mobile-nav {
+            .rect1 {
+                background: getColor(default);
+            }
+            .rect2{
+                background: getColor(default);
+            }
+            .rect3{
+                background: getColor(default);
+            }
+        }
+        .hamburger-mobile__enabled {
+            ul {
+                li {
+                    a {
+                        text-decoration: none;
+                        font-family: getFont(base);
+                        color: getColor(default);
+                        filter: drop-shadow(0 0 0.50rem black);
+                    }
+                }
+            }
+        }
+    }
+    // Card image config
+    .card-desc-container {
+        background-color: getColor(default);
+        filter: drop-shadow(0 4px 0.30rem rgba(0,0,0,0.5));
+        .image-container {
+            background-image: url(/assets/me/image-card.png);
+        }
+    }
+    // short about me content
+    .desc-container{
+        .fname{
+            font-family: getFont(base);
+            font-size: 1.8em;
+        }
+        .lname {
+            font-family: getFont(base);
+            color: getColor(accent);
+            font-size:2em;
+        }
+        .desc {
+            font-family: getFont(secondary);       
+            font-size: 1.5em;
+        }
+    }
+    // button actions
+    .button-container {
+        .projects-btn{
+            background: rgba($color: #000000, $alpha: 0);            
+            color: black;
+            border-color: black;
+        }
+        .collab-btn {
+            background: getColor(accent);            
+            color: getColor(default);
+        }
+    }
+}
+
+// ABOUT
 .about-page {
     background-color: getColor(base);
 }
