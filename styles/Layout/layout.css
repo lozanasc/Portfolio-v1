@@ -6,6 +6,101 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.homepage-container .top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px auto;
+}
+
+.homepage-container .top-nav .hamburger-mobile-nav {
+  display: inline-block;
+}
+
+.homepage-container .top-nav .hamburger-mobile-nav .rect1 {
+  padding: 0;
+  margin: 6px auto;
+}
+
+.homepage-container .top-nav .hamburger-mobile-nav .rect2 {
+  padding: 0;
+  margin: 6px auto;
+}
+
+.homepage-container .top-nav .hamburger-mobile-nav .rect3 {
+  padding: 0;
+  margin: 6px auto;
+}
+
+.homepage-container .top-nav .hamburger-mobile__enabled {
+  margin: auto;
+}
+
+.homepage-container .top-nav .hamburger-mobile__enabled ul {
+  margin-bottom: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.homepage-container .top-nav .hamburger-mobile__enabled ul li {
+  display: inline;
+}
+
+.homepage-container .top-nav .hamburger-mobile__enabled ul li a {
+  margin: auto 2.5px;
+}
+
+.homepage-container .card-desc-container {
+  margin: auto;
+}
+
+.homepage-container .card-desc-container .image-container {
+  margin: auto;
+}
+
+.homepage-container .desc-container {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto 12%;
+}
+
+.homepage-container .desc-container .fname {
+  margin: 0;
+}
+
+.homepage-container .desc-container .lname {
+  margin: 0;
+}
+
+.homepage-container .desc-container .desc {
+  margin: 0;
+}
+
+.homepage-container .button-container {
+  margin: auto;
+}
+
+.homepage-container .button-container .projects-btn {
+  margin: auto 2px;
+}
+
+.homepage-container .button-container .collab-btn {
+  margin: auto 2px;
 }
 
 .about-page {

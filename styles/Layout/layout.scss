@@ -4,6 +4,78 @@
 .homepage-container {
     display: flex;
     flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // nav-stuff layout config
+    .top-nav {
+        display: flex;
+        flex-direction: column;
+        margin: 15px auto;
+        .hamburger-mobile-nav {
+            display: inline-block;
+            .rect1{
+                padding: 0;
+                margin: 6px auto;
+            }
+            .rect2{
+                padding: 0;
+                margin: 6px auto;
+            }
+            .rect3{
+                padding: 0;
+                margin: 6px auto;
+            }
+        }
+        .hamburger-mobile__enabled {
+            margin: auto;
+            ul {
+                margin-bottom: 0;
+                padding: 0;
+                list-style-type: none;
+                li {
+                    display: inline;  
+                    a{
+                        margin: auto 2.5px;
+                    } 
+                }
+            }
+        }
+    }
+    // card w/ image config
+    .card-desc-container {
+        margin: auto;
+        .image-container {
+            margin: auto;
+        }
+    }
+    // short about me description config
+    .desc-container{
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        margin: auto 12%;
+        .fname {
+            margin: 0;
+            
+        }
+        .lname{
+            margin: 0;
+            
+        }
+        .desc {
+            margin: 0;
+        }
+    }
+    .button-container {
+        margin: auto;
+        .projects-btn {
+            margin: auto 2px;
+        }
+        .collab-btn {
+            margin: auto 2px;
+        }
+    }
 }
 
 
