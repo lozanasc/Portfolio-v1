@@ -1,0 +1,40 @@
+// Viewports
+
+$viewports: (
+    phone: 599px,
+    tablet_portrait: 600px,
+    tablet_landscape: 900px,
+    desktop_up: 1200px,
+    big_desktop_up: 1800px 
+);
+
+@function getViewport($view){
+    @return map-get($map: $viewports, $key: $view);
+}
+
+// Mixins
+@mixin phone {
+    @media (max-width: getViewport(phone)){
+        @content;
+    }
+}
+@mixin tablet-portrait {
+    @media (min-width: getViewport(tablet_portrait)){
+        @content;
+    }
+}
+@mixin tablet-landscape {
+    @media (min-width: getViewport(tablet_landscape)){
+        @content;
+    }
+}
+@mixin desktop-up {
+    @media (min-width: getViewport(desktop_up)){
+        @content;
+    }
+}
+@mixin big-desktop-up {
+    @media (min-width: getViewport(big_desktop_up)){
+        @content;
+    }
+}
