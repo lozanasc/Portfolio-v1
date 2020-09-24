@@ -40,15 +40,24 @@
 }
 
 .homepage-container .button-container .projects-btn {
-  width: 120px;
-  height: 30px;
+  width: 150px;
+  height: 40px;
   border-radius: 20px;
 }
 
+.homepage-container .button-container .projects-btn:focus {
+  outline: none;
+}
+
 .homepage-container .button-container .collab-btn {
-  width: 120px;
-  height: 30px;
+  width: 150px;
+  height: 40px;
   border: none;
   border-radius: 20px;
+  outline: none;
+}
+
+.homepage-container .button-container .collab-btn:focus {
+  outline: none;
 }
 /*# sourceMappingURL=modules.css.map */

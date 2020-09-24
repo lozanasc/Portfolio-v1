@@ -38,15 +38,23 @@
     }
     .button-container {
         .projects-btn{
-            width: 120px;
-            height: 30px;
+            width: 150px;
+            height: 40px;
             border-radius: 20px;
+            &:focus {
+                outline: none;
+
+            }
         }
         .collab-btn {
-            width: 120px;
-            height: 30px;
+            width: 150px;
+            height: 40px;
             border: none;
             border-radius: 20px;
+            outline: none;
+            &:focus {
+                outline: none;
+            }
         }
     }
 }

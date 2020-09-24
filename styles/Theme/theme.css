@@ -62,11 +62,28 @@
   background: rgba(0, 0, 0, 0);
   color: black;
   border-color: black;
+  font-size: clamp(1.2em, 1em, 2em);
+}
+
+.homepage-container .button-container .projects-btn:hover {
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+  -webkit-filter: drop-shadow(0 0 0.5rem black);
+          filter: drop-shadow(0 0 0.5rem black);
 }
 
 .homepage-container .button-container .collab-btn {
+  border-color: black;
+  font-size: clamp(1.2em, 1em, 2em);
   background: #4906ef;
   color: white;
+}
+
+.homepage-container .button-container .collab-btn:hover {
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+  -webkit-filter: drop-shadow(0 0 0.5rem black);
+          filter: drop-shadow(0 0 0.5rem black);
 }
 
 .about-page {
