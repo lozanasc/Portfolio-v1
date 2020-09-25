@@ -28,35 +28,35 @@
     .card-desc-container {
         height: 100%;
         width: 100%;
-    }
-    .card-container {
-        height: 50%;
-        width: 75%;
-        .image-container {
-            height: 100%;
-            width: 100%;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-    }
-    .button-container {
-        .projects-btn{
-            width: 125px;
-            height: 35px;
-            border-radius: 20px;
-            &:focus {
-                outline: none;
+        .card-container {
+            height: 50%;
+            width: 75%;
+            .image-container {
+                height: 100%;
+                width: 100%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
             }
         }
-        .collab-btn {
-            width: 125px;
-            height: 35px;
-            border: none;
-            border-radius: 20px;
-            outline: none;
-            &:focus {
+        .button-container {
+            .projects-btn{
+                width: 125px;
+                height: 35px;
+                border-radius: 20px;
+                &:focus {
+                    outline: none;
+                }
+            }
+            .collab-btn {
+                width: 125px;
+                height: 35px;
+                border: none;
+                border-radius: 20px;
                 outline: none;
+                &:focus {
+                    outline: none;
+                }
             }
         }
     }

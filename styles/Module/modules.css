@@ -31,12 +31,12 @@
   width: 100%;
 }
 
-.homepage-container .card-container {
+.homepage-container .card-desc-container .card-container {
   height: 50%;
   width: 75%;
 }
 
-.homepage-container .card-container .image-container {
+.homepage-container .card-desc-container .card-container .image-container {
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -44,17 +44,17 @@
   background-repeat: no-repeat;
 }
 
-.homepage-container .button-container .projects-btn {
+.homepage-container .card-desc-container .button-container .projects-btn {
   width: 125px;
   height: 35px;
   border-radius: 20px;
 }
 
-.homepage-container .button-container .projects-btn:focus {
+.homepage-container .card-desc-container .button-container .projects-btn:focus {
   outline: none;
 }
 
-.homepage-container .button-container .collab-btn {
+.homepage-container .card-desc-container .button-container .collab-btn {
   width: 125px;
   height: 35px;
   border: none;
@@ -62,7 +62,7 @@
   outline: none;
 }
 
-.homepage-container .button-container .collab-btn:focus {
+.homepage-container .card-desc-container .button-container .collab-btn:focus {
   outline: none;
 }
 
