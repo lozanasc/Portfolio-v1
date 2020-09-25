@@ -41,9 +41,19 @@
                 }
             }
         }
+        .tablet-up-nav {
+            display: none;
+        }
+        // Tablet portrait size configuration
+    @include tablet-portrait {
+        .hamburger-mobile-nav {
+            display: none;
+        }
+        
+    }
     }
     // card w/ image config
-    .card-desc-container {
+    .card-container {
         margin: auto;
         .image-container {
             margin: auto;
@@ -75,6 +85,13 @@
             margin: auto 2px;
         }
     }
+    .next-page {
+        margin: auto;
+        display: flex;
+        button {
+            margin: auto;
+        }
+    }
 }
 
 
@@ -84,6 +101,8 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 // PROJECTS PAGE

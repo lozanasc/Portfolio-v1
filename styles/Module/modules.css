@@ -27,11 +27,16 @@
 }
 
 .homepage-container .card-desc-container {
+  height: 100%;
+  width: 100%;
+}
+
+.homepage-container .card-container {
   height: 50%;
   width: 75%;
 }
 
-.homepage-container .card-desc-container .image-container {
+.homepage-container .card-container .image-container {
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -40,8 +45,8 @@
 }
 
 .homepage-container .button-container .projects-btn {
-  width: 150px;
-  height: 40px;
+  width: 125px;
+  height: 35px;
   border-radius: 20px;
 }
 
@@ -50,14 +55,28 @@
 }
 
 .homepage-container .button-container .collab-btn {
-  width: 150px;
-  height: 40px;
+  width: 125px;
+  height: 35px;
   border: none;
   border-radius: 20px;
   outline: none;
 }
 
 .homepage-container .button-container .collab-btn:focus {
+  outline: none;
+}
+
+.homepage-container .next-page {
+  height: clamp(20px, 35px, 60px);
+  width: clamp(20px, 35px, 60px);
+}
+
+.homepage-container .next-page button {
+  height: 60%;
+  width: 60%;
+}
+
+.homepage-container .next-page button:focus {
   outline: none;
 }
 /*# sourceMappingURL=modules.css.map */

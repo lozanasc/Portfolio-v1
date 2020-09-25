@@ -32,13 +32,13 @@
           filter: drop-shadow(0 0 0.5rem black);
 }
 
-.homepage-container .card-desc-container {
+.homepage-container .card-container {
   background-color: white;
   -webkit-filter: drop-shadow(0 4px 0.3rem rgba(0, 0, 0, 0.5));
           filter: drop-shadow(0 4px 0.3rem rgba(0, 0, 0, 0.5));
 }
 
-.homepage-container .card-desc-container .image-container {
+.homepage-container .card-container .image-container {
   background-image: url(/assets/me/image-card.png);
 }
 
@@ -62,7 +62,8 @@
   background: rgba(0, 0, 0, 0);
   color: black;
   border-color: black;
-  font-size: clamp(1.2em, 1em, 2em);
+  font-size: clamp(1.1em, 1em, 3em);
+  font-family: "Montserrat";
 }
 
 .homepage-container .button-container .projects-btn:hover {
@@ -74,14 +75,29 @@
 
 .homepage-container .button-container .collab-btn {
   border-color: black;
-  font-size: clamp(1.2em, 1em, 2em);
+  font-size: clamp(1.1em, 1em, 2em);
   background: #4906ef;
   color: white;
+  font-family: "Montserrat";
 }
 
 .homepage-container .button-container .collab-btn:hover {
   -webkit-transition: ease 1s;
   transition: ease 1s;
+  -webkit-filter: drop-shadow(0 0 0.5rem black);
+          filter: drop-shadow(0 0 0.5rem black);
+}
+
+.homepage-container .next-page button {
+  background-color: #4906ef;
+  border: none;
+  -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+          clip-path: polygon(100% 0, 0 0, 50% 100%);
+}
+
+.homepage-container .next-page:hover {
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
   -webkit-filter: drop-shadow(0 0 0.5rem black);
           filter: drop-shadow(0 0 0.5rem black);
 }

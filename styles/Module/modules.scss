@@ -26,6 +26,10 @@
         }
     }
     .card-desc-container {
+        height: 100%;
+        width: 100%;
+    }
+    .card-container {
         height: 50%;
         width: 75%;
         .image-container {
@@ -38,20 +42,30 @@
     }
     .button-container {
         .projects-btn{
-            width: 150px;
-            height: 40px;
+            width: 125px;
+            height: 35px;
             border-radius: 20px;
             &:focus {
                 outline: none;
-
             }
         }
         .collab-btn {
-            width: 150px;
-            height: 40px;
+            width: 125px;
+            height: 35px;
             border: none;
             border-radius: 20px;
             outline: none;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .next-page {
+        height: clamp(min(20px),35px,max(60px));
+        width: clamp(min(20px),35px,max(60px));
+        button {
+            height: 60%;
+            width: 60%;
             &:focus {
                 outline: none;
             }

@@ -1,9 +1,9 @@
 .top-nav {
    // Hamburger is inactive
     .hamburger-mobile__enabled {
-        // visibility: hidden;
         display: none;
     }
+    
   // When hamburger button is toggled/active
   /* Rotate first bar */
   .rect1, .rect2, .rect3 {

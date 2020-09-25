@@ -59,11 +59,21 @@
   margin: auto 2.5px;
 }
 
-.homepage-container .card-desc-container {
+.homepage-container .top-nav .tablet-up-nav {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .homepage-container .top-nav .hamburger-mobile-nav {
+    display: none;
+  }
+}
+
+.homepage-container .card-container {
   margin: auto;
 }
 
-.homepage-container .card-desc-container .image-container {
+.homepage-container .card-container .image-container {
   margin: auto;
 }
 
@@ -102,11 +112,29 @@
   margin: auto 2px;
 }
 
+.homepage-container .next-page {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.homepage-container .next-page button {
+  margin: auto;
+}
+
 .about-page {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .projects-page {
