@@ -28,25 +28,32 @@
                     <li><a href="#projects"><strong>PROJECTS</strong></a></li>
                 </ul>
             </div>
-             <div class="tablet-up-nav" style="display: none;">
+             <div class="tablet-up-nav">
                 <ul>
-                    <li><a href=""><strong>CONTACTS</strong></a></li>
-                    <li><a href=""><strong>ABOUT</strong></a></li>
-                    <li><a href=""><strong>PROJECTS</strong></a></li>
+                    <li><a href="#contacts"><strong>CONTACTS</strong></a></li>
+                    <li><a href="#about"><strong>ABOUT</strong></a></li>
+                    <li><a href="#projects"><strong>PROJECTS</strong></a></li>
                 </ul>
             </div>
         </header>
-        <!-- base card-desc is a column -->
+        <!-- base card-desc-btn
+            Layouts:
+            mobile - column
+            tablet-portraint up - row
+        -->
         <div class="card-desc-container">
-            <div class="image-container"></div>
-        </div>
-        <!-- columna as well -->
-        <div class="desc-container">
-            <h1 class="fname"><strong>Sean Christian</strong></h1>
-            <h1 class="lname"><strong>LOZANA</strong></h1>
-            <h2 class="desc"><strong>Developer & Designer</strong></h2>
-        </div>
-        <!-- should be a row -->
+            <div class="card-container">
+                <div class="image-container">
+                </div>
+                
+            </div>
+            <!-- column as well -->
+            <div class="desc-container">
+                <h1 class="fname"><strong>Sean Christian</strong></h1>
+                <h1 class="lname"><strong>LOZANA</strong></h1>
+                <h2 class="desc"><strong>Developer & Designer</strong></h2>
+            </div>
+            <!-- should be a row -->
         <div class="button-container">
             <button class="projects-btn">
                 <strong>PROJECTS</strong>
@@ -55,9 +62,12 @@
                 <strong>COLLAB</strong>
             </button>
         </div>
+        </div>
         <!-- part of the base which is the column -->
-        <button class="next-page">
-        </button>
+        <div class="next-page">
+            <button class="next">
+            </button>
+        </div>
     </div>
 
     <!-- ABOUT -->
