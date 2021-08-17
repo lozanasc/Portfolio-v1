@@ -1,0 +1,9 @@
+@import '../themes';
+
+.title {
+    font-family: getFontStyle(heading);
+    color: salmon;
+    @include deviceDimension(getDeviceDimension(phone)){
+        color: red;
+    }
+}

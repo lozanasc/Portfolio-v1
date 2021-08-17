@@ -1,0 +1,71 @@
+// ? I included in the assets folder a zip file for the fonts to be installed locally, this acts as a fallback when you don't have it installed locally but have an internet
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$fontStyles: (
+    heading: 'Libre Baskerville',
+    paragraph: 'Montserrat'
+);
+
+$colorTheme: (
+    color1: #0D1821,
+    color2: #344966,
+    color3: #B4CDED,
+    color4: #F0F4EF,
+    color5: #BFCC94,
+    color6: #F093AF,
+    colorBase: white
+);
+    
+$deviceDimensions: (
+    phone: 599px,
+    tabletUp: 600px,
+    tabletLandscapeUp: 900px,
+    desktopUp: 1200px,
+    wideDesktopUp: 1800px
+);
+
+@function getFontStyle($fontStyle){
+    @return map-get($map: $fontStyles, $key: $fontStyle);
+}
+
+@function getColorTheme($color){
+    @return map-get($map: $colorTheme, $key: $color);
+}
+
+@function getDeviceDimension($device){
+    @return map-get($map: $deviceDimensions, $key: $device);
+}
+
+@mixin deviceDimension($dimension){
+
+    @if $dimension == getDeviceDimension(phone) {
+        @media (max-width: getDeviceDimension(phone)) {
+            @content;
+        }
+    }
+
+    @else if $dimension == getDeviceDimension(tabletUp){
+        @media (max-width: getDeviceDimension(tabletUp)) {
+            @content;
+        }
+    }
+
+    @else if $dimension == getDeviceDimension(tabletLandscapeUp){
+        @media (max-width: getDeviceDimension(tabletLandscapeUp)) {
+            @content;
+        }
+    }
+
+    @else if $dimension == getDeviceDimension(desktopUp){
+        @media (max-width: getDeviceDimension(desktopUp)) {
+            @content;
+        }
+    }
+
+    @else if $dimension == getDeviceDimension(wideDesktopUp){
+        @media (max-width: getDeviceDimension(wideDesktopUp)) {
+            @content;
+        }
+    }
+
+}

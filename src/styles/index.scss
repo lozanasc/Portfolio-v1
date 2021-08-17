@@ -1,0 +1,9 @@
+@import './themes';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: getColorTheme(color4);
+}
