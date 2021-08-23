@@ -30,7 +30,6 @@ function Header(){
                     spy={true}        
                     smooth={true} 
                     duration={1000} 
-                    offset={20}
                     containerId="Content" 
                     to="About"
                 > 

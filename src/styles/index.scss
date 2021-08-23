@@ -13,6 +13,8 @@
   }
 
   body {
+      min-height: 100vh;
+      min-width: 100vw;
       background-color: getColorTheme(color4);
       scroll-behavior: smooth;
   }

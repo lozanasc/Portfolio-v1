@@ -10,7 +10,6 @@ function Projects(){
             className="Projects" 
             id="Projects"
         >
-            Projects page
         </Element>
     );
 }
