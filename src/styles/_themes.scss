@@ -57,7 +57,7 @@ $deviceDimensions: (
     }
 
     @else if $dimension == getDeviceDimension(desktopUp){
-        @media (max-width: getDeviceDimension(desktopUp)) {
+        @media (min-width: getDeviceDimension(desktopUp)) {
             @content;
         }
     }
