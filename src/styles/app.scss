@@ -1,0 +1,20 @@
+@import './themes';
+
+.App {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    // Phone
+    @include deviceDimension(getDeviceDimension(phone)){
+        // Flips the navbar to the bottom
+        //  for better navigation experience on Mobile
+        flex-flow: column-reverse;   
+    }
+    .Content {
+        display: flex;
+        flex-flow: column;
+        overflow-y: auto;
+        max-width: 100vw;
+    }
+}
