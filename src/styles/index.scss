@@ -1,9 +1,31 @@
 @import './themes';
 
-* {
-    box-sizing: border-box;
-}
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
 
-body {
-    background-color: getColorTheme(color4);
-}
+  body {
+      background-color: getColorTheme(color4);
+      scroll-behavior: smooth;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: getColorTheme(color2);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: getColorTheme(color4);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: getColorTheme(color2);
+  }
