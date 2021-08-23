@@ -1,0 +1,53 @@
+@import './themes';
+
+.NavBar{
+    margin: 0;
+    height: fit-content;
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    justify-content: space-between;
+    font-family: getFontStyle(heading);
+    color: getColorTheme(color4);
+    background-color: getColorTheme(color2);
+    position: fixed;
+    z-index: 1;
+    .LinkContainer {
+        margin: auto;
+        a {
+            margin: auto 25px;
+            cursor: pointer;
+            text-decoration: none;
+            color: getColorTheme(color4);
+            &:hover{
+                filter: blur(0 0 0.15rem rgba(0, 0, 0, 0.596));
+            }
+        }
+        .active{
+            background-color: getColorTheme(color6);
+            padding: 5px;
+            border-radius: 4px;
+            text-decoration: underline;
+            transition: 0.5s ease-in-out;
+        }
+        // Tablet landscape
+        @include deviceDimension(getDeviceDimension(tabletLandscapeUp)){
+            margin: auto;
+            
+            .active{
+                padding: 2px;
+            }
+        }
+        // Phone/Tab(portrait)
+        @include deviceDimension(getDeviceDimension(phone)){
+            a {
+                margin: auto 2px;
+                padding: 8px;
+                font-size: small;
+            }
+            .active{
+                padding: 2px;
+            }
+        }
+    }
+}
