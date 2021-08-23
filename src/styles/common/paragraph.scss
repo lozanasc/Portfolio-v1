@@ -1,1 +1,9 @@
 @import '../themes';
+
+.paragraph {
+    font-family: getFontStyle(paragraph);
+    color: getColorTheme(color1);
+    @include deviceDimension(getDeviceDimension(tabletLandscapeUp)){
+        font-size: clamp(8px, 14px, 22px);
+    }
+}
