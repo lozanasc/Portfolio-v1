@@ -1,10 +1,17 @@
 import React from 'react';
+import { Element } from 'react-scroll';
+import '../styles/projects.scss';
 
 function Projects(){
+
     return (
-        <div className="Projects" id="Projects">
+        <Element 
+            name="Projects" 
+            className="Projects" 
+            id="Projects"
+        >
             Projects page
-        </div>
+        </Element>
     );
 }
 
