@@ -1,10 +1,16 @@
 import React from 'react';
+import { Element } from 'react-scroll';
+import '../styles/contact.scss';
 
 function Contact(){
+
     return (
-        <div className="Contact" id="Contact">
-            Contact page
-        </div>
+        <Element
+            name = "Contact"
+            className="Contact" 
+            id="Contact"
+        >
+        </Element>
     );
 }
 
