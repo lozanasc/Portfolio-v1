@@ -23,10 +23,6 @@ export default function Projects(){
 
     const isOnScreen = onScreenHook(projectsRef);
 
-    const imageHref = (url) => {
-        window.location.replace(url);
-    }
-
     return (
         <div ref={projectsRef} className="Projects">
             {
