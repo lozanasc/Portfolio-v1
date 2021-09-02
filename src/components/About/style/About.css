@@ -1,0 +1,277 @@
+/* ! unreadable 😒 */
+
+.About {
+    min-height: 100vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+}
+
+.About > .InnerContainer {
+    display: flex;
+    flex-flow: row-reverse;
+    margin: auto 10px;
+    justify-content: space-evenly;
+}
+
+.About > .InnerContainer > .ProfileContainer {
+    display: flex;
+    flex-flow: column;
+    padding: 5px 25px;
+    margin: auto;
+    min-height: 100%;
+    min-width: 50%;
+}
+
+.About > .InnerContainer > .ProfileContainer > .Profile {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.About > .InnerContainer > .MeContainer {
+    display: flex;
+    flex-flow: column;
+    padding: 5px 25px;
+    min-height: 100%;
+    min-width: 50%;
+    margin: auto;
+}
+.About > .InnerContainer > .MeContainer > .IconGroup {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px auto;
+}
+
+.About > .InnerContainer > .MeContainer > .IconGroup > img {
+    height: 48px;
+    width: 48px;
+}
+
+.About > .InnerContainer > .MeContainer > h1 {
+    color: var(--color6);
+    margin: 2.5px 0px;
+}
+
+.About > .InnerContainer > .MeContainer > h2 {
+    margin: 2.5px 0px;
+}
+
+.About > .InnerContainer > .MeContainer > p {
+    margin: 5px auto;
+}
+
+/* ! There's definitely a better way to do this 😒 
+   ! REFACTOR LATER 😥
+*/
+/* * Mobile */
+@media (max-width: 599px) {
+    .About > .InnerContainer > .MeContainer > h1 {
+        margin: auto;
+        font-size: larger;
+    }
+    .About > .InnerContainer > .MeContainer > h2 {
+        margin: 2.5px auto;
+        font-size: medium;
+    }
+    .About > .InnerContainer > .MeContainer > p {
+        margin: 10px auto;
+        font-size: 12px;
+    }
+    .About > .InnerContainer {
+        flex-flow: column;
+    }
+    .About > .InnerContainer > .ProfileContainer { 
+        width: 100%;
+        padding: 5px 25px;
+    }
+    .About > .InnerContainer > .MeContainer {
+        width: 100%;
+        padding: 5px 25px;
+    }
+    .About > .InnerContainer > .MeContainer > .IconGroup > img {
+        height: 28px;
+        width: 28px;
+        margin: 5px 8px;
+    }
+    .About > .InnerContainer > .ProfileContainer > .Profile {
+        height: 130px;
+        width: 130px;
+        margin: auto;
+        background-image: url('../../../assets/gallery/Profile\ Mobile.png');
+    }
+}
+/* * Mobile for Galaxy Fold 😫 */
+@media (max-width: 280px){
+    .About > .InnerContainer > .MeContainer > h1 {
+        margin: 5px auto;
+        font-size: medium;
+    }
+    .About > .InnerContainer > .MeContainer > h2 {
+        margin: 5px auto;
+        font-size: smaller;
+    }
+    .About > .InnerContainer > .MeContainer > p {
+        margin: 5px auto;
+        font-size: 10px;
+    }
+    .About > .InnerContainer {
+        flex-flow: column;
+    }
+    .About > .InnerContainer > .ProfileContainer { 
+        width: 100%;
+        padding: 5px 25px;
+    }
+    .About > .InnerContainer > .MeContainer {
+        width: 100%;
+        padding: auto 15px;
+    }
+    .About > .InnerContainer > .MeContainer > .IconGroup > img {
+        height: 18px;
+        width: 18px;
+    }
+}
+/* * Tablet Portrait */
+@media (min-width: 600px) {
+    .About > .InnerContainer > .MeContainer > h1 {
+        margin: 10px auto;
+        font-size: xx-large;
+    }
+    .About > .InnerContainer > .MeContainer > h2 {
+        margin: 10px auto;
+        font-size: x-large;
+    }
+    .About > .InnerContainer > .MeContainer > p {
+        width: 65%;
+        margin: 15px auto;
+        font-size: medium;
+    }
+    .About > .InnerContainer {
+        flex-flow: column;
+    }
+    .About > .InnerContainer > .ProfileContainer { 
+        width: 100%;
+        padding: 5px 25px;
+    }
+    .About > .InnerContainer > .MeContainer > .IconGroup > img {
+        height: 38px;
+        width: 38px;
+        margin: 10px 8px;
+    }
+    .About > .InnerContainer > .ProfileContainer > .Profile {
+        height: 250px;
+        width: 250px;
+        margin: 50px auto;
+        background-image: url('../../../assets/gallery/Profile\ Mobile.png');
+    }
+}
+/* * Tablet Landscape */
+@media (min-width: 900px) {
+    .About > .InnerContainer > .MeContainer > h1 {
+        margin: 5px 0px;
+        font-size: xx-large;
+    }
+    .About > .InnerContainer > .MeContainer > h2 {
+        margin: 10px 0px;
+        font-size: large;
+    }
+    .About > .InnerContainer > .MeContainer p {
+        width: 100%;
+        margin: 5px 0px;
+        font-size: medium;
+    }
+    .About > .InnerContainer {
+        flex-flow: row-reverse;
+    }
+    .About > .InnerContainer > .MeContainer > .IconGroup > img {
+        height: 38px;
+        width: 38px;
+    }
+    .About > .InnerContainer > .ProfileContainer > .Profile {
+        height: 100vh;
+        margin: auto;
+        width: 100%;
+        background-image: url('../../../assets/gallery/Profile\ Web.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+/* * Desktop */
+@media (min-width: 1200px) {
+    .About > .InnerContainer > .MeContainer > h1 {
+        font-size: xx-large;
+    }
+    .About > .InnerContainer > .MeContainer > h2 {
+        font-size: x-large;
+    }
+    .About > .InnerContainer > .MeContainer > p {
+        margin: 5px auto;
+        font-size: medium;
+    }
+    .About > .InnerContainer > .MeContainer >.IconGroup > img {
+        height: 38px;
+        width: 38px;
+    }
+    .About > .InnerContainer > .ProfileContainer > .Profile {
+        height: 100vh;
+        margin: auto;
+        width: 100%;
+        background-image: url('../../../assets/gallery/Profile\ Web.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+/* * tall boi devices */
+@media (min-width: 1024px) and (min-height: 1366px){
+    .About > .InnerContainer > .ProfileContainer > .Profile {
+        height: 100vh;
+        margin: auto;
+        width: 100%;
+        background-image: url('../../../assets/gallery/Profile\ Mobile.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+/* * Semi chungus wide Monitor */
+@media (min-width: 1440px) {
+    .About > .InnerContainer > .MeContainer > h1 {
+        font-size: 45px;
+    }
+    .About > .InnerContainer > .MeContainer > h2 {
+        font-size: 20px;
+    }
+    .About > .InnerContainer > .MeContainer > p {
+        width: 80%;
+        margin: 5px 0px;
+        font-size: 15px;
+    }
+    .About > .InnerContainer > .MeContainer > .IconGroup > img {
+        height: 48px;
+        width: 48px;
+    }
+}
+/* * Big Chungus wide Monitor */
+@media (min-width: 1800px) {
+    .About > .InnerContainer > .MeContainer > h1 {
+        font-size: 65px;
+    }
+    .About > .InnerContainer > .MeContainer > h2 {
+        font-size: 40px;
+    }
+    .About > .InnerContainer > .MeContainer > p {
+        width: 85%;
+        margin: 35px 0px;
+        font-size: 30px;
+    }
+    .About > .InnerContainer > .MeContainer > .IconGroup > img {
+        margin: 10px 25px;
+        height: 68px;
+        width: 68px;
+    }
+}

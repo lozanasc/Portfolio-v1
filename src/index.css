@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --Header: 'Work Sans';
+  --Accent: 'Montserrat';
+  --color1: #0D1821;
+  --color2: #344966;
+  --color3: #B4CDED;
+  --color4: #F0F4EF;
+  --color5: #BFCC94;
+  --color6: #F093AF;
+  --color4-hover: #a3a7a2;
+  --base: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  max-height: 100%;
+  background-color: var(--color4);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* General styling */
+h1,h2,h3,h4,h5,h6,a {
+  font-family: var(--Header);
+}
+
+p, code, span,label,input,textarea {
+  font-family: var(--Accent);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color2);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color4);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color4-hover);
+}
+

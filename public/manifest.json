@@ -1,6 +1,6 @@
 {
   "short_name": "devzana",
-  "name": "devzana's Portfolio",
+  "name": "devzana",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#F093AF",
+  "theme_color": "#344966",
   "background_color": "#F0F4EF"
 }

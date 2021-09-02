@@ -1,0 +1,124 @@
+.Projects {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    margin: 5px auto;
+    padding: 25px;
+}
+
+.Projects > .InnerContainer {
+    display: flex;
+    flex-flow: column;
+    padding: 25px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.Projects > .InnerContainer > .Project {
+    min-height: 55vh;
+    width: 100%;
+    display: flex;
+    margin: 50px auto;
+}
+.Projects > .InnerContainer > .Project > .ProjectSample {
+    height: 200px;
+    width: 100%;
+    margin: 0 0 15px 0;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Projects > .InnerContainer > .Project > .ProjectInfo {
+    display: flex;
+    flex-flow: column;
+    min-width: 60%;
+    max-width: 60%;
+}
+.Projects > .InnerContainer > .Project > .ProjectInfo > h1 {
+    margin: 10px 0;
+    color: var(--color6);
+}
+.Projects > .InnerContainer > .Project > .ProjectInfo > h2  {
+    margin: 10px 0;
+}
+.Projects > .InnerContainer > .Project > .ProjectInfo > p {
+    margin: 10px 0;
+}
+.Projects > .InnerContainer > .Project > .ProjectInfo > .IconGroup {
+    display: flex;
+    flex-flow: row;
+    
+}
+
+.Projects > .InnerContainer > .Project > .ProjectInfo > .IconGroup > img {
+    margin: 5px 10px;
+    height: 28px;
+    width: 28px;
+}
+
+/* * Mobile */
+@media (max-width: 599px) {
+    .Projects > .InnerContainer > .Project {
+        flex-flow: column;
+    }
+}
+/* * Mobile for Galaxy Fold 😫 */
+@media (max-width: 280px){
+}
+/* * Tablet Portrait */
+@media (min-width: 600px) {
+    .Projects > .InnerContainer > .Project {
+        flex-flow: column;
+    }
+}
+/* * Tablet Landscape */
+@media (min-width: 900px) {
+    .Projects > .InnerContainer > .Project:nth-child(odd) {
+        flex-flow: row-reverse;
+    }
+    .Projects > .InnerContainer > .Project:nth-child(even) {
+        flex-flow: row;
+    }
+    .Projects > .InnerContainer > .Project > .ProjectSample {
+        margin: 15px auto;
+    }
+}
+/* * Desktop */
+@media (min-width: 1200px) {
+}
+/* * Semi chungus wide Monitor */
+@media (min-width: 1440px) {
+}
+/* * Big Chungus wide Monitor */
+@media (min-width: 1800px) {
+    .Projects > .InnerContainer > .Project {
+        margin: 100px auto;
+        min-height: 65vh;
+    }
+    .Projects > .InnerContainer > .Project > .ProjectSample {
+        height: 600px;
+        width: 900px;
+        margin: 15px 50px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .Projects > .InnerContainer > .Project > .ProjectInfo > h1 {
+        font-size: 65px;
+    }
+    .Projects > .InnerContainer > .Project > .ProjectInfo > h2  {
+        font-size: 45px;
+    }
+    .Projects > .InnerContainer > .Project > .ProjectInfo > p {
+        font-size: xx-large;
+    }
+    .Projects > .InnerContainer > .Project > .ProjectInfo > .IconGroup > img {
+        margin: 5px 25px;
+        height: 78px;
+        width: 78px;
+    }
+    .Projects > .InnerContainer > .Project > .ProjectInfo {
+        min-width: 65%;
+        max-width: 65%;
+    }
+}

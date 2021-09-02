@@ -1,0 +1,176 @@
+.Contact { 
+    display: flex;
+    min-height: 100vh;
+    margin:  30px auto;
+    width: 100%;
+    padding: 50px;
+}
+
+.Contact > .InnerContainer {
+    display: flex;
+    flex-flow: row-reverse;
+    margin: auto;
+    width: 90%;
+}
+
+.Contact > .InnerContainer > .ContactInfo {
+    padding: 10px;
+    margin: 0px auto;
+    display: flex;
+    flex-flow: column;
+    width: 30%;
+    justify-content: space-between;
+}
+.Contact > .InnerContainer > .ContactInfo > .Info {
+    display: flex;
+    flex-flow: column;
+}
+.ContactInfo > .Info > img {
+    margin: auto;
+    height: 48px;
+    width: 48px;
+}
+
+.ContactForm {
+    display: flex;
+    flex-flow: column;
+    margin: 15px auto;
+    width: 100%;
+}
+
+.ContactForm > .Input {
+    margin: 10px 0;
+}
+
+.ContactForm > h1 {
+    color: var(--color6);
+    margin: 10px 0;
+}
+
+.ContactForm > .Input > label > input {
+    height: 30px;
+    border: none;
+    padding: 5px;
+    border: black solid;
+    border-radius: 5px;
+    background-color: var(--base);
+    width: 65%;
+}
+
+.ContactForm > .Input > label > .Message {
+    padding: 2px;
+    margin: 5px auto;
+    border: black solid;
+    border-radius: 5px;
+    height: 100px;
+    width: 65%;
+    resize: none;
+}
+
+.ContactForm > button {
+    height: 30px;
+    width: 20%;
+    border: none;
+    border-radius: 5px;
+    color: var(--color4);
+    background-color: var(--color6);
+    cursor: pointer;
+}
+
+
+
+/* ! There's definitely a better way to do this 😒 */
+/* * Mobile */
+@media (max-width: 599px) {
+    .Contact > .InnerContainer {
+        flex-flow: column;
+    }
+    .Contact > .InnerContainer > .ContactInfo {
+        flex-flow: row;
+        width: 100%;
+    }
+    .Contact > .InnerContainer > .ContactInfo > .Info > p {
+        display: none;
+    }
+    .Contact > .InnerContainer > .ContactInfo > .Info > img {
+        margin: auto;
+        height: 28px;
+        width: 28px;
+    }
+    .Contact > .InnerContainer > .ContactForm > h1 {
+        font-size: large;
+    }
+    .Contact > .InnerContainer > .ContactForm > p {
+        font-size: small;
+    }
+    .Contact > .InnerContainer > .ContactForm > .Input > label > input {
+        width: 100%;
+    }
+    .Contact > .InnerContainer > .ContactForm > .Input > label > .Message {
+        width: 100%;
+    }
+    .Contact > .InnerContainer > .ContactForm > button {
+        width: 35%;
+    }
+}
+/* * Mobile for Galaxy Fold 😫 */
+@media (max-width: 280px){
+}
+/* * Tablet Portrait */
+@media (min-width: 600px) {
+    .Contact > .InnerContainer {
+        flex-flow: column;
+    }
+    .Contact > .InnerContainer > .ContactInfo {
+        flex-flow: row;
+        width: 100%;
+        margin: 25px auto;
+    }
+    .ContactInfo > .Info > p {
+        margin: 5px auto;
+        display: none;
+    }
+    .ContactInfo > .Info > img {
+        margin: auto;
+        height: 38px;
+        width: 38px;
+    }
+    .ContactForm > h1 {
+        font-size: x-large;
+    }
+    .ContactForm > p {
+        font-size: medium;
+    }
+    .ContactForm > .Input > label > input {
+        width: 100%;
+    }
+    .ContactForm > .Input > label > .Message {
+        width: 100%;
+    }
+}
+/* * Tablet Landscape */
+@media (min-width: 900px) {
+    .Contact > .InnerContainer {
+        flex-flow: row-reverse;
+    }
+    .Contact > .InnerContainer > .ContactInfo {
+        width: 30%;
+        flex-flow: column;
+    }
+    .ContactInfo > .Info > p {
+        margin: auto;
+        display: block;
+    }
+    .ContactForm > h1 {
+        font-size: xx-large;
+    }
+    .ContactForm > p {
+        font-size: large;
+    }
+    .ContactForm > .Input > label > input {
+        width: 65%;
+    }
+    .ContactForm > .Input > label > .Message {
+        width: 65%;
+    }
+}

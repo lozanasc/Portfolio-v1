@@ -1,0 +1,35 @@
+.App {
+  min-height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.Content{
+  min-height: 95vh;
+  max-height: 95vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+@media (max-width: 599px) {
+  .App {
+    flex-flow: column-reverse;
+  }
+  .Content {
+    min-height: 92vh;
+    max-height: 92vh;
+  }
+}
+@media (min-width: 600px) {
+  .App {
+    flex-flow: column-reverse;
+  }
+}
+@media (min-width: 900px) {
+  .App {
+    flex-flow: column;
+  }
+}

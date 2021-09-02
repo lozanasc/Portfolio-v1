@@ -1,0 +1,74 @@
+.Navigation {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: var(--color2);
+    height: 10vh;
+    max-height: 10vh;
+}
+
+.Navigation > .InnerContainer {
+    margin: auto;
+}
+
+a {
+    margin: 6px;
+    padding: 2px;
+    color: var(--color4);
+    cursor: pointer;
+}
+
+.Navigation > .InnerContainer > .active {
+    background-color: var(--color6);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: ease-in-out 0.5s;
+}
+
+/* ! There's definitely a better way to do this 😒 */
+/* * Mobile */
+@media (max-width: 599px) {
+    a {
+        font-size: small;
+    }
+}
+/* * Mobile for Galaxy Fold 😫 */
+@media (max-width: 280px){
+    a {
+        font-size: 10px;
+    }
+}
+/* * Tablet Portrait */
+@media (min-width: 600px) {
+    a {
+        margin: 15px;
+    }
+}
+/* * Tablet Landscape */
+@media (min-width: 900px) {
+    a{
+        margin: 25px;
+    }
+}
+/* * Desktop */
+@media (min-width: 1200px) {
+    a{
+        font-size: large;
+        margin: 65px;
+    }
+}
+/* * Semi chungus wide Monitor */
+@media (min-width: 1440px) {
+    a{
+        font-size: large;
+        margin: 125px;
+    }
+}
+/* * Big Chungus wide Monitor */
+@media (min-width: 1800px) {
+    a{
+        font-size: xx-large;
+        margin: 125px;
+    }
+}

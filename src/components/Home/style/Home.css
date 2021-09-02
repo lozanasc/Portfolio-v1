@@ -1,0 +1,142 @@
+.Home {
+    min-height: 100vh;
+    padding: 15px;
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto 20px auto;
+}
+
+.Home > .InnerContainer {
+    margin: auto;
+}
+
+.Home > .InnerContainer > h1 {
+    color: var(--color6);
+}
+
+.Home > .InnerContainer > p {
+    margin: 5px auto;
+}
+
+.Home > .InnerContainer > .IconGroup {
+    margin: 5px auto;
+    display: flex;
+}
+.Home > .InnerContainer > .IconGroup > img {
+    margin: auto 5px;
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+}
+
+/* ! There's definitely a better way to do this 😒 */
+/* * Mobile */
+@media (max-width: 599px) {
+    .Home > .InnerContainer > h1 {
+        font-size: x-large;
+    }
+    .Home > .InnerContainer > h2 {
+        font-size: medium;
+    }
+    .Home > .InnerContainer > p {
+        margin: 5px auto;
+        font-size: 12px;
+    }
+    .Home > .InnerContainer > .IconGroup > img {
+        height: 35px;
+        width: 35px;
+    }
+    
+}
+/* * Mobile for Galaxy Fold 😫 */
+@media (max-width: 280px){
+    .Home > .InnerContainer > h1 {
+        font-size: larger;
+    }
+    .Home > .InnerContainer > h2 {
+        font-size: smaller;
+    }
+    .Home > .InnerContainer > p {
+        margin: 5px auto;
+        font-size: 10px;
+    }
+
+}
+/* * Tablet Portrait */
+@media (min-width: 600px) {
+    .Home > .InnerContainer > h1 {
+        font-size: 45px;
+    }
+    .Home > .InnerContainer > h2 {
+        font-size: 30px;
+    }
+    .Home > .InnerContainer > p {
+        margin: 15px auto;
+        font-size: large;
+    }
+}
+/* * Tablet Landscape */
+@media (min-width: 900px) {
+    .Home > .InnerContainer > h1 {
+        font-size: 45px;
+    }
+    .Home > .InnerContainer > h2 {
+        font-size: 30px;
+    }
+    .Home > .InnerContainer > p {
+        margin: 5px auto;
+        font-size: large;
+    }
+}
+/* * Desktop */
+@media (min-width: 1024px) {
+    .Home > .InnerContainer > h1 {
+        font-size: 45px;
+    }
+    .Home > .InnerContainer > h2 {
+        font-size: 30px;
+    }
+    .Home > .InnerContainer > p {
+        margin: 5px auto;
+        font-size: 20px;
+    }
+    .Home > .InnerContainer > .IconGroup > img {
+        height: 48px;
+        width: 48px;
+    }
+}
+/* * Semi chungus wide Monitor */
+@media (min-width: 1440px) {
+    .Home > .InnerContainer > h1 {
+        font-size: 65px;
+    }
+    .Home > .InnerContainer > h2 {
+        font-size: 40px;
+    }
+    .Home > .InnerContainer > p {
+        margin: 5px auto;
+        font-size: 25px;
+    }
+    .Home > .InnerContainer > .IconGroup > img {
+        height: 65px;
+        width: 65px;
+    }
+}
+/* * Big Chungus wide Monitor */
+@media (min-width: 1800px) {
+    .Home > .InnerContainer > h1 {
+        font-size: 85px;
+    }
+    .Home > .InnerContainer > h2 {
+        font-size: 60px;
+    }
+    .Home > .InnerContainer > p {
+        margin: 5px auto;
+        font-size: 35px;
+    }
+    .Home > .InnerContainer > .IconGroup > img {
+        height: 85px;
+        width: 85px;
+    }
+
+}
