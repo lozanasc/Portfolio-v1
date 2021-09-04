@@ -61,6 +61,9 @@
     .Projects > .InnerContainer > .Project {
         flex-flow: column;
     }
+    .Projects > .InnerContainer > .Project > .ProjectInfo {
+        max-width: 100%;
+    }
 }
 /* * Mobile for Galaxy Fold 😫 */
 @media (max-width: 280px){
@@ -69,6 +72,9 @@
 @media (min-width: 600px) {
     .Projects > .InnerContainer > .Project {
         flex-flow: column;
+    }
+    .Projects > .InnerContainer > .Project > .ProjectInfo {
+        max-width: 100%;
     }
 }
 /* * Tablet Landscape */
@@ -81,6 +87,10 @@
     }
     .Projects > .InnerContainer > .Project > .ProjectSample {
         margin: 15px auto;
+    }
+    .Projects > .InnerContainer > .Project > .ProjectInfo {
+        min-width: 65%;
+        max-width: 65%;
     }
 }
 /* * Desktop */
