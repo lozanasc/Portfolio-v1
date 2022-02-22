@@ -33,7 +33,7 @@ export default function Contact(){
         e.preventDefault();
         // TODO: Figure out environment variables for React 
         // ! PROTECT THEM CREDENTIALS MY BOI
-        emailjs.sendForm(process.env.service_id, process.env.template_id, e.target, process.env.user_id)
+        emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID)
       .then((result) => {
           result.text === 'OK' && toastSuccess('Message sent!');
       }, (error) => {
